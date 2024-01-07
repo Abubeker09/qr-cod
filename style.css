@@ -1,0 +1,82 @@
+body{
+  background-color: cadetblue;
+}
+.contaner{
+  margin: 20% 20%;
+  background:linear-gradient(130deg, rgba(64, 135, 138, 0.521),rgba(89, 177, 248, 0.521));
+  width: 400px;
+  padding: 50px;
+  border-radius: 5px;
+}
+.btn{
+  display: flex;
+}
+button{
+  width: 100%;
+  height: 60px;
+  border: none;
+  color: rgb(119, 103, 103);
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px;
+  transition: 0.3s;
+  user-select: none;
+}
+button:hover{
+  box-shadow: 1px 1px 20px rgb(93, 196, 127);
+  transition: 0.3s;
+}
+button:active{
+  opacity: 0.5;
+  transition: 0.1s;
+}
+
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+  opacity: 0.6;
+}
+
+input{
+  background-color: rgba(240, 248, 255, 0.438);
+  border: none;
+  width: 99%;
+  font-size: 18px;
+  height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+#imgBox{
+  max-height: 0;
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.13);
+  transition: 0.6s;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.error{
+  animation: shake 0.3s linear 2;
+  box-shadow: 1px 1px 15px rgba(255, 0, 0, 0.459), inset 1px 1px 10px rgba(255, 0, 0, 0.493);
+}
+@keyframes shake{
+  0% {transform: translateX(0px)}
+  25% {transform: translateX(-8px)}
+  50% {transform: translateX(0px)}
+  75% {transform: translateX(-8px)}
+  100% {transform: translateX(0px)}
+}
+
+#imgBox img{
+  transition: 3s;
+}
+
+#imgBox.show-img{
+  max-height: 300px;
+}
